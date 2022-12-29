@@ -1,0 +1,12 @@
+<p>film-list works!</p>
+<div>
+<ul *appShow="showMovies">
+    <li *ngFor="let film of filmList;">
+        <h1 appSurvole>{{film.name}}</h1>
+        <h2>{{film.genre}}</h2>
+        
+    </li>
+</ul>
+<button (click)="showHide()">Afficher/Cacher mon age</button>
+
+</div>
